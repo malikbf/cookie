@@ -1,12 +1,22 @@
 import React from 'react';
-import Navbar from './Navbar'; // Ange sökvägen till din Navbar-komponent
-import About from "./About"; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import AboutPage from './AboutPage';
+import SellPage from './SellPage'; // Skapa en komponent för "Börja sälja" sidan
+import ContactPage from './ContactPage'; // Skapa en komponent för "Kontakt" sidan
+
 function App() {
   return (
-    <div className="App">
-      <Navbar /> {/* Här inkluderar du Navbar-komponenten */}
-      {/* Här kan du lägga till resten av din applikations JSX */}
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/sell" element={<SellPage />} /> {/* Skapa en väg för "Börja sälja" sidan */}
+          <Route path="/contact" element={<ContactPage />} /> {/* Skapa en väg för "Kontakt" sidan */}
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

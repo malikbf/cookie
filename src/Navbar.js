@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'; // Importera CSS-filen för att styla navbaren
-import About from './About.js'; 
+import About from './AboutPage.js'; 
 
 function Navbar() {
   return (

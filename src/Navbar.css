@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #ADD8E6; /* Ljusblå färg */
+    padding: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-links li {
+    margin-right: 10px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }

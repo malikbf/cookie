@@ -1,0 +1,88 @@
+.home-background {
+  background-image: url('bakgrund.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative; /* Gör förälderelementet positionellt för att placera barnen relativt till det */
+}
+
+.content {
+  position: absolute; /* Placera barnet relativt till det positionella förälderelementet */
+  top: 50%; /* Placera elementet i mitten vertikalt */
+  left: 50%; /* Placera elementet i mitten horisontellt */
+  transform: translate(-50%, -50%); /* Centrera elementet exakt */
+  text-align: center; /* Centrera texten horisontellt */
+  color: rgb(255, 255, 255); /* Justera textfärgen */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  width: 850px;
+}
+
+.knapp {
+  position: relative;
+  background-color: #5f9ea0; 
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 60px;
+  display: inline-block;
+  border-radius: 70px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+.knapp-img {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+
+.knapp-img-right {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Placera bilden 10px från högra sidan av knappen */
+  transform: translateY(-50%);
+}
+.sida {
+  height: 5000px;
+} 
+.sida2 {
+  background-color: #fffaed; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.godis {
+  margin-top: 10%;
+  margin-left: 12%;
+  width: 30%;
+  height: 50%;
+}
+.textruta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  margin-top: 10%;
+  width: 40%;
+  margin-left: 5%;
+  position: absolute;
+  font-weight: bold;
+  text-align: left;
+}
+.litentextruta {
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  text-align: left;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 5%;
+}

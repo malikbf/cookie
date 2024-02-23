@@ -1,18 +1,25 @@
 import React from 'react';
-import './Navbar.css'; // Importera CSS-filen för att styla navbaren
-import About from './AboutPage.js'; 
+import { Link } from 'react-router-dom';
+import './Navbar.css'; 
+import logo from './logo.png'; 
 
 function Navbar() {
   return (
     <nav className="navbar">
+      
       <ul className="nav-links">
-        <li><a href="/">Startsida</a></li>
-        <li><a href="/sell">Börja sälja</a></li>
-        <li><a href="/about">Om oss</a></li> {/* Lägg till länk till Om oss-sidan */}
-        <li><a href="/contact">Kontakt</a></li>
+      <img src={logo} alt="logo" className="logo" /> 
+        <li><Link to="/home">Startsida</Link></li>
+        <li><Link to="/sell">Börja sälja</Link></li>
+        <li><Link to="/about">Om oss</Link></li>
+        <li><Link to="/contact">Kontakt</Link></li>
       </ul>
+      
     </nav>
+            
   );
+  
 }
+
 
 export default Navbar;

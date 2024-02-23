@@ -1,19 +1,35 @@
 .navbar {
-    background-color: #ADD8E6; /* Ljusblå färg */
-    padding: 20px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .nav-links li {
-    margin-right: 10px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: white;
-  }
+    overflow: hidden; /* Döljer eventuellt överflödigt innehåll inom navbaren */
+    background-color: #ffffff; /* Bakgrundsfärg för navbaren */
+    position: absolute; /* Ställer in positionen på navbaren till absolut */
+    top: 0; /* Placerar navbaren i toppen av sidan */
+    width: 100%; /* Sätter bredden på navbaren till 100% av förälderelementet */
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none; /* Tar bort punkterna från listan */
+    display: flex; /* Använder flexbox för att justera layouten av länkarna */
+    margin-top: auto; /* Ger flexbox-elementet automatiskt utrymme ovanför sig */
+    justify-content: right; /* Jämnt fördelar utrymmet mellan länkarna */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin-top: absolute; /* Sätter den översta marginalen för listelementen till absolut */
+    margin-top: 25px; /* Ändrar den översta marginalen till 20px (det andra värdet ersätter det första, så detta är det enda som används) */
+    margin-right: 50px; /* Sätter marginalen på höger sida av listelementen till 100px */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Tar bort understrykning från länkarna */
+    color: #5f9ea0; /* Sätter färgen på länkarna till vit */
+}
+
+.logo {
+    width: 70px; /* Justerar bredden på loggan till 70px */
+    position: absolute; /* Ställer in positionen på loggan till absolut */
+    left: 10px; /* Placerar loggan 10px från vänsterkanten av sitt förälderelement */
+    top: auto; /* Använder standardpositionen för loggan (ingen specifikation av toppen) */
+}

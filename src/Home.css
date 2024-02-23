@@ -6,7 +6,7 @@
   position: relative; /* Gör förälderelementet positionellt för att placera barnen relativt till det */
 }
 
-.content {
+.hej {
   position: absolute; /* Placera barnet relativt till det positionella förälderelementet */
   top: 50%; /* Placera elementet i mitten vertikalt */
   left: 50%; /* Placera elementet i mitten horisontellt */
@@ -85,4 +85,8 @@
   position: absolute;
   margin-top: 20%;
   margin-left: 5%;
+}
+.link {
+  text-decoration: none;
+  color: white;
 }

@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import './Home.css'; 
 import knapp from './knapp.png'; // Importera bilden
 import godis from './godis.png'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -10,12 +11,13 @@ function Home() {
 
       <div className="home-background"> 
         <Navbar />
-        <div className="content">
+        <div className="hej">
           <h1>Tjäna pengar till laget, klassen eller föreningen!</h1>
           <button className="knapp">
+            <Link className='link' to="/sell">Börja försäljning!</Link>
             <img src={knapp} alt="Knapp" className="knapp-img" />
             <img src={knapp} alt="Knapp" className="knapp-img-right" />
-            Börja försäljning!
+            
           </button>
         
         </div>

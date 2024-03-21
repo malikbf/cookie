@@ -8,12 +8,13 @@ function Navbar() {
     <nav className="navbar">
       
       <ul className="nav-links">
-      <img src={logo} alt="logo" className="logo" /> 
+      <img src={logo} alt="logo" className="logo" />  
+        <div className="godiskassan">GODISKASSAN</div>
         <li><Link to="/">Startsida</Link></li>
         <li><Link to="/sell">Börja sälja</Link></li>
         <li><Link to="/login">Mina sidor</Link></li>
         <li><Link to="/about">Om oss</Link></li>
-        <li><Link to="/contact">Kontakt</Link></li>
+        <li><Link to="/contact">Produkter</Link></li>
         
       </ul>
       

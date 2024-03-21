@@ -1,0 +1,81 @@
+.backgroundcolor {
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+  margin-top: 10vh; /* Justera avståndet från toppen */
+  font-size: 10vh; /* Justera storleken på rubriken */
+  color: #5f9ea0; /* Färgen på rubriken */
+}
+
+.produkt-container {
+  margin-top: 10vh; /* Skjut ner hela behållaren 10% av viewport height */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Uppdatera till 3 kolumner istället för 4 */
+  gap: 2vw; /* Använd 2% av viewport width som gap */
+}
+
+.produkt-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh; /* Sänk ner varje produkt 2% av viewport height */
+  transition: transform 0.3s ease; /* Lägg till en transitions-effekt */
+}
+
+.produkt-item:hover {
+  transform: scale(1.05); /* Skala upp produkten vid hover */
+}
+
+.produkt-image {
+  width: 25vw; /* Anpassa bredden till 20% av viewport width */
+  height: 25vh; /* Anpassa höjden till 15% av viewport height */
+  max-width: 150px; /* Maximal bredd för att begränsa storleken */
+  max-height: 150px; /* Maximal höjd för att begränsa storleken */
+  border-radius: 8px;
+  object-fit: cover; /* Behåll proportionerna utan att sträcka bilden */
+}
+
+.produkt-details {
+  margin-top: 1vw; /* Använd 1% av viewport width som margin-top */
+  text-align: center;
+}
+
+.produkt-price {
+  font-size: 1.5vw; /* Använd 1.5% av viewport width som fontstorlek */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw; /* Använd 2% av viewport width som gap */
+  margin-top: 2vh; /* Använd 2% av viewport height som margin-top */
+  text-align: center;
+}
+
+.prev-button,
+.next-button,
+.add-to-cart-button,
+.show-cart-button,
+.clear-cart-button {
+  flex-grow: 1; /* Gör alla knappar lika breda */
+  padding: 1vw 2vw; /* Använd 1% av viewport width som padding för topp/botten och 2% av viewport width som padding för vänster/höger */
+  font-size: 1.5vw; /* Använd 1.5% av viewport width som fontstorlek */
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover,
+.add-to-cart-button:hover,
+.show-cart-button:hover,
+.clear-cart-button:hover {
+  background-color: #e0e0e0;
+}
+
+.clear-cart-button {
+  margin-top: 0; /* Återställ margin-top */
+}

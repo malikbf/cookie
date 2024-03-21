@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Stilar för hela AboutUsPage-komponenten */
+.about-us {
+    height: 60vw;
+    margin-top: 5vw;
+    text-align: center;
+    padding: 20px;
+    background-color:#fffaed ;
+}
+  
+/* Stilar för Employee-komponenten */
+.employee {
+    margin-top: 2vw;
+    float: left; /* Display employees horizontally */ /* Adjust horizontal spacing between employees */ /* Align employees to the top */
+    width: 30%; /* Adjust width to fit three employees in a row */
+}
+
+.employees{
+    margin-left:10%;
+}
+
+
+.employee-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+/* Övriga stilar för sidan */
+/* Lägg till fler stilar efter behov */
+    
+  

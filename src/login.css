@@ -1,0 +1,150 @@
+.login-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('bakgrund.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login-text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 35vh;
+    color: #ffffff;
+}
+.role-selection {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px; 
+}
+
+.role-option{
+    cursor: pointer; 
+    height: 25vh; 
+    width: 18vw; 
+    background-color: #ffffff; 
+    color: #5f9ea0; 
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    transition: all 0.3s ease; 
+
+}
+.role-option1 {
+    cursor: pointer; 
+    height: 25vh; 
+    width: 18vw; 
+    background-color: #ffffff; 
+    color: #5f9ea0; 
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    transition: all 0.3s ease; 
+    border-left: 0.5px solid black;
+}
+
+.role-option h3, .role-option1 h3 {
+
+    font-size: 1.5rem; 
+    text-align: center;
+
+}
+
+.role-option img, .role-option1 img {
+    margin-top: 10%;
+    width: 6vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.login-form{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    height: 30%;
+
+}
+
+.login-form input{
+    margin-top: 5%;
+
+}
+
+.login-form button {
+    position: relative;
+    float: center;
+    padding: 10px 20px; 
+    margin-top: 3vw;
+    background-color: #5f9ea0; 
+    
+    border: 2px solid transparent;
+    border-radius: 30px; 
+    
+    cursor: pointer; 
+    
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+
+}
+
+.login-form button:hover {
+    background-color: #c8ccd2;
+}
+.login-form a{
+    position: relative;
+    float: left;
+    height: 3vw;
+    margin-left: 1vw;
+    margin-top: 1%;
+
+}
+
+.login-form img{
+    position: relative;
+    float: right;
+    height: 3vw;
+    margin-left: 1vw;
+    margin-top: 3vw;
+    cursor: pointer;
+}
+
+.reset-form{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    height: 20%;
+}
+
+.reset-form button{
+    margin: 0;
+    position: absolute;
+    left: 30%;
+    padding: 10px 20px; 
+    margin-top: 3vw;
+    background-color: #5f9ea0; 
+    
+    border: 2px solid transparent;
+    border-radius: 30px; 
+    
+    cursor: pointer; 
+    
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.reset-form img{
+    position: relative;
+    float: right;
+    height: 3vw;
+    margin-left: 1vw;
+    margin-top: 3vw;
+    cursor: pointer;
+}

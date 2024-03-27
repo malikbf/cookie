@@ -26,22 +26,29 @@ function Home() {
             <img src={knapp} alt="Knapp" className="knapp-img" />
             <img src={knapp} alt="Knapp" className="knapp-img-right" />
           </button>
+          <div className ='provision'>
+            <p1>Vi tar hand om alla betalningar direkt, så ni behöver inte oroa er för fakturor. Er provision betalas ut omedelbart efter avslutad försäljning. Så enkelt är det!</p1>
+          </div>
         </div>
       </div>
 
       <div className='sida2'>
         <img src={godis} className="godis"></img>
         <div className='godistext'>
-          <p1 className='textruta'>Sälj populära och lättsålda delikatesser!</p1>
+          <p1 className='textruta'>Här är några anledningar till varför ni bör välja oss:</p1>
           <br />
           <p></p>
-          <p1 className='litentextruta'> Det finns flera anledningar till varför ni ska välja DelikatessKungen, först och främst är det för våra delikatesser.</p1>
+          <p1 className='litentextruta'> Ni får tillgång till några av de mest omtyckta godismärkena på marknaden.</p1>
           <br />
           <p></p>
-          <p1 className='litentextruta'>Med efterfrågade produkter blir det roligare och enklare att tjäna pengar till föreningen, klassen eller laget. Alla produkter är noggrant utvalda och av hög kvalitet.</p1>
+          <p1 className='litentextruta'>Vår innovativa webbshoplösning förenklar hela försäljningsprocessen. Ni behöver inte längre oroa er för hantering av pengar - varken inom föreningen eller klassen. Det är slut med att samla in kontanter eller swisha pengar.</p1>
           <br />
           <p></p>
-          <p1 className='litentextruta'>Ni säljer alla våra delikatesser vid en försäljning.</p1>
+          <p1 className='litentextruta'>Genom att dela era personliga webbshop-länkar kan kunderna enkelt och bekvämt betala direkt.</p1>
+          <p></p>
+          <p1 className='litentextruta'>Ni behöver endast hantera distributionen av godiset till era nära och kära.
+          Er förtjänst betalas ut till administratörens bankkonto eller direkt till föreningens konto efter varje lyckad försäljning.
+          </p1>      
         </div>
       </div>
       <img src={steg123} alt="Steg 1" className="steg-img" />

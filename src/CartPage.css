@@ -1,68 +1,68 @@
-/* cartPage.css */
-
 .cart-container {
-    padding: 20px;
-  }
-  
-  .header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .cart-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .cart-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  .cart-item-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .cart-item-details {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cart-item-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .cart-item-info {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .cart-item-quantity,
-  .cart-item-price {
-    font-size: 14px;
-  }
-  
-  .back-to-products-button,
-  .clear-cart-button {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #5f9ea0;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .back-to-products-button:hover,
-  .clear-cart-button:hover {
-    background-color: #5f9ea0;
-  }
+  padding: 2vw; /* Använda vw för responsiv padding */
+}
+
+.header {
+  text-align: center;
+  font-size: 2vw; /* Använda vw för responsiv typsnittsstorlek */
+  margin-bottom: 2vh; /* Använda vh för responsivt avstånd */
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr)); /* Använda vw för responsiv grid */
+  grid-gap: 2vw; /* Använda vw för responsivt avstånd */
+}
+
+.cart-item {
+  border: 0.1vw solid #ccc; /* Använda vw för att definiera en tunnare gräns */
+  padding: 1vw; /* Använda vw för responsiv padding */
+}
+
+.cart-item-image {
+  width: 30vw; /* Använda vw för responsiv bildbredd */
+  height: auto;
+  display: block;
+  margin-bottom: 1vw; /* Använda vw för responsivt avstånd */
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  margin-bottom: 0.5vw; /* Använda vw för responsivt avstånd */
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item-quantity,
+.cart-item-price {
+  font-size: 1.4vw; /* Använda vw för responsiv typsnittsstorlek */
+}
+
+.back-to-products-button,
+.clear-cart-button,
+.pay-button {
+  display: block;
+  width: 100%;
+  margin-top: 2vh; /* Använda vh för responsivt avstånd */
+  padding: 1vw; /* Använda vw för responsiv padding */
+  background-color: #5f9ea0;
+  color: #fff;
+  border: none;
+  border-radius: 0.5vw; /* Använda vw för responsiv border-radie */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-products-button:hover,
+.clear-cart-button:hover,
+.pay-button:hover {
+  background-color: #3b6978; /* Ändra bakgrundsfärgen vid hovring */
+}

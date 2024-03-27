@@ -8,12 +8,12 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-column">
           <h3>About Us</h3>
-          <p>We are a company dedicated to providing high-quality products and excellent customer service.</p>
+          <p>Vår banbrytande lösning erbjuder skolelever och föreningsmedlemmar en smidig väg att samla in pengar för olika ändamål genom försäljning av högkvalitativt godis från välkända varumärken.</p>
         </div>
         <div className="footer-column">
           <h3>Contact Us</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: 123-456-7890</p>
+          <p>Email:  info@godiskassan.se</p>
+          <p>Phone:  072 311 99 99</p>
         </div>
         <div className="footer-column">
           <h3>Follow Us</h3>

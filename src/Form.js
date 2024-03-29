@@ -1,30 +1,45 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Form.css'; // Import CSS file for styling
 import candy from './candy.png'
 
 function Form() {
-  const [formData, setFormData] = useState({
-    name: '',
-    organization: '',
-    city: '',
-    class: '',
-    phoneNumber: '',
-    email: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   organization: '',
+  //   city: '',
+  //   class: '',
+  //   phoneNumber: '',
+  //   email: ''
+  // });
+  const [name, setName] = useState();
+  const [organization, setOrganization] = useState();
+  const [city, setCity] = useState();
+  const [klass, setKlass] = useState();
+  const [phoneNumber, setphoneNumber] = useState();
+  const [email, setEmail] = useState();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value
+  //   });
+  // };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission (e.g., send data to backend)
+  //   console.log(formData);
+
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to backend)
-    console.log(formData);
-  };
+    axios.post('http://localhost:3001/form', {name, organization, city, klass, phoneNumber, email})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+  //   onSubmit({ username, password, role: 'admin' });
+};
 
   return (
     <div className="form-page-background">
@@ -46,8 +61,8 @@ function Form() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="form-control"
                 placeholder="Förnamn Efternamn"
                 />
@@ -58,8 +73,8 @@ function Form() {
                 type="text"
                 id="organization"
                 name="organization"
-                value={formData.organization}
-                onChange={handleChange}
+                value={organization}
+                onChange={(e) => setOrganization(e.target.value)}
                 className="form-control"
                 placeholder="Håkantorpskolan 3a"
                 />
@@ -70,8 +85,8 @@ function Form() {
                 type="text"
                 id="city"
                 name="city"
-                value={formData.city}
-                onChange={handleChange}
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
                 className="form-control"
                 placeholder="Västerås"
                 />
@@ -82,8 +97,8 @@ function Form() {
                 type="text"
                 id="class"
                 name="class"
-                value={formData.class}
-                onChange={handleChange}
+                value={klass}
+                onChange={(e) => setKlass(e.target.value)}
                 className="form-control"
                 placeholder="Skälby BK P19"
                 />
@@ -94,8 +109,8 @@ function Form() {
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
+                value={phoneNumber}
+                onChange={(e) => setphoneNumber(e.target.value)}
                 className="form-control"
                 placeholder="071-236554"
                 />
@@ -106,8 +121,8 @@ function Form() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="form-control"
                 placeholder="john@gmail.com"
                 />

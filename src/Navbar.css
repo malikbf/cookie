@@ -1,7 +1,7 @@
 .navbar {
     overflow: hidden; /* Döljer eventuellt överflödigt innehåll inom navbaren */
     background-color: #ffffff; /* Bakgrundsfärg för navbaren */
-    position: absolute; /* Ställer in positionen på navbaren till absolut */
+    position: relative; /* Ställer in positionen på navbaren till absolut */
     top: 0; /* Placerar navbaren i toppen av sidan */
     width: 100%; /* Sätter bredden på navbaren till 100% av förälderelementet */
     height: 70px;
@@ -42,6 +42,4 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #5f9ea0
-
-
 }

@@ -1,5 +1,9 @@
 // Login.js
 import React, { useState } from 'react';
+
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 import './login.css';
 import icon from './back-icon.png';
 import mcon from './group-icon.png';
@@ -9,9 +13,20 @@ import ResetPasswordForm from './ResetPasswordForm';
 function AdminLogin({ onSubmit, onBack, onForgotPassword }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios.post('http://localhost:3001/login', {username, password, role: 'admin'})
+    .then(result => {
+        console.log(result)
+        // const token = result.data.token;
+        // localStorage.setItem('token', token);
+        if (result.data === "Success"){
+            navigate('/admin')
+        }
+    })
+    .catch(err=> console.log(err))
     onSubmit({ username, password, role: 'admin' });
   };
 
@@ -27,12 +42,23 @@ function AdminLogin({ onSubmit, onBack, onForgotPassword }) {
 }
 
 function SellerLogin({ onSubmit, onBack, onForgotPassword }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState();
+  const [password, setPassword] = useState();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ username, password, role: 'säljare' });
+    axios.post('http://localhost:3001/login', {username, password, role: 'seller'})
+    .then(result => {
+        console.log(result)
+        // const token = result.data.token;
+        // localStorage.setItem('token', token);
+        if (result.data === "Success"){
+            navigate('/contact')
+        }
+    })
+    .catch(err=> console.log(err))
+    onSubmit({ username, password, role: 'seller' });
   };
 
   return (

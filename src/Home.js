@@ -18,7 +18,6 @@ function Home() {
   return (
     <div className='sida'>
       <div className="home-background"> 
-        <Navbar />
         <div className="hej">
           <h1>Tjäna pengar till laget, klassen eller föreningen!</h1>
           <button className="knapp">
